@@ -15,7 +15,7 @@ os.environ['HF_TOKEN'] = os.getenv("HF_TOKEN")
 
 st.title("HealthQ ChatBot")
 
-api_key = os.getenv("GROQ_API_KEY")
+api_key = os.getenv("OPENAI_API_KEY")
 
 if api_key:
     llm = initialize_llm(api_key)

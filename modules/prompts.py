@@ -20,9 +20,9 @@ def get_qa_prompt():
 
       Carefully analyze the **context** provided from official insurance documents to answer the user’s **question**. Your response must be:
       - Accurate, complete, and free of assumptions
-      - Written in **at least 50 words**
       - Structured clearly and easy to understand for a general audience
       - Detailed if the context includes multiple points
+      - if multiple question asked in same input , give detail output with proper detail 
 
       Do not fabricate information. If the answer is not found in the context, simply respond with: **"I'm sorry, I couldn't find that information in the provided policy documents."**
 
