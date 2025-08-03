@@ -29,3 +29,5 @@ unstructured
 numexpr
 streamlit
 langchain_openai
+fastapi
+uvicorn[standard]
