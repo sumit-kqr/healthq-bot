@@ -18,4 +18,4 @@ EXPOSE 8501
 ENV PYTHONUNBUFFERED=1
 
 # Run Streamlit on the provided $PORT (Render, Railway, etc.)
-CMD ["sh", "-c", "streamlit run app.py --server.port $PORT --server.address 0.0.0.0"]
+CMD ["sh", "-c", "streamlit run app.py --server.port ${PORT:-8501} --server.address 0.0.0.0"]
