@@ -9,9 +9,11 @@ from modules.retriever_chain import build_conversational_rag_chain
 from modules.session_handler import get_session_history
 
 # Load environment variables
-
 load_dotenv()
-os.environ['HF_TOKEN'] = os.getenv("HF_TOKEN")
+# Optional: set HF token only if provided
+hf_token = os.getenv("HF_TOKEN")
+if hf_token:
+    os.environ["HF_TOKEN"] = hf_token
 
 st.title("HealthQ ChatBot")
 

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# Virtualenv / env files
+.venv/
+venv/
+.env
+.env.*
+
+# Node
+node_modules/
+
+# Data and cache
+chroma_db/
+.cache/
+.huggingface/
+~/.cache/
+/tmp/
+
+# OS/Editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Docs and artifacts
+*.pdf
+*.ipynb
+
+# Git
+.git
+.gitignore
+
+# Build
+build/
+dist/
+*.egg-info/

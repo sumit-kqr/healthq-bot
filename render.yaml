@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: healthq
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    # Render will assign $PORT; Dockerfile uses it to run Streamlit
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: HF_TOKEN
+        sync: false
